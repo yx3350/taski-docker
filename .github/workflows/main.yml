@@ -19,6 +19,8 @@ jobs:
           POSTGRES_PASSWORD: mysecretpassword
           POSTGRES_django_password: mysecretpassword
           POSTGRES_DB: django_db
+          DB_HOST: postgres
+          DB_PORT: 5432
         ports:
           - 5432:5432
         # Эта конструкция описывает проверку готовности сервиса postgres
